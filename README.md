@@ -37,3 +37,12 @@ Deployment: Deploy the smart contracts to the Solana blockchain and host the fro
 ## Personal Story Summary:
 
 I have always been passionate about both productivity and blockchain technology. After encountering the limitations of traditional task management tools, I wanted to create something that could offer greater transparency, security, and control. TaskChain was born out of the desire to leverage the decentralized nature of blockchain to create a task management platform that empowers users. With TaskChain, I aim to make task management more secure and efficient for everyone, while embracing the potential of blockchain to change how we manage our digital lives.
+
+# Image Generator Prompt
+
+a young handsome university student making to do list in college garden
+
+# Visual
+
+![image](https://github.com/user-attachments/assets/8056a59b-3ed6-4af6-8798-73edb1ecbcc0)
+
