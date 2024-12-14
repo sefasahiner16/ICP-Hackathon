@@ -1,117 +1,35 @@
 # ICP-Hackathon
 
+# Who Are You?
+
+Sefa Şahiner
+İrfan Burak Ege
+
 # ToDoList Project
 
 A simple ToDoList application built using Motoko. This application allows you to create, update, delete, and manage tasks. Each task can have a title, description, category, priority, and completion status.
 
-## Features
+## Project Vision
 
-- **Create Tasks**: Add new tasks with a title, description, category, and priority.
-- **Update Tasks**: Modify existing tasks with new information.
-- **Toggle Completion**: Mark tasks as completed or non-completed.
-- **Delete Tasks**: Remove tasks from the list.
-- **View Tasks**: Filter tasks based on their completion status and priority.
+The ToDoList project combines simple task management with blockchain technology to provide a decentralized, secure, and transparent platform. It aims to empower users with full control over their tasks, ensuring data integrity and accountability. With features like prioritization, categorization, and completion tracking, the project seeks to optimize productivity while fostering trust. The long-term vision is to expand the app’s capabilities, creating a flexible solution adaptable to various industries.
 
-## Data Structures
+# Project Description
 
-### Task
+TaskChain is a decentralized task management platform built on the Solana blockchain. The app allows users to securely create, update, complete, and delete tasks, with all task data stored on the blockchain. Each task is tagged with priority, category, and completion status, making it easy to manage. By leveraging Solana's high-speed blockchain, TaskChain ensures transparency and immutability, giving users full control over their tasks. This project offers a simple yet powerful way to enhance productivity while maintaining data integrity and security.
 
-A task contains the following attributes:
+# Vision Statement
 
-- `title`: The title of the task (text).
-- `description`: A brief description of the task (text).
-- `isCompleted`: A boolean value indicating whether the task is completed.
-- `category`: The category of the task (either Work, Personal, Shopping, Health, or Other).
-- `priority`: The priority of the task (High, Medium, Low).
+TaskChain aims to revolutionize digital task management by integrating blockchain technology for secure, transparent, and decentralized task tracking. By leveraging the power of Solana, we ensure that users' tasks are immutable, giving them complete control and trust over their task data. Our goal is to optimize personal and professional productivity through a simple, reliable platform, while expanding TaskChain's adaptability across industries. TaskChain will be a key player in the evolution of decentralized productivity tools, fostering transparency and security at scale.
 
-### TaskId
+## Software Development Plan:
 
-A unique identifier for each task of type `Nat32`.
+Smart Contract Development: Develop core smart contracts to handle task creation, updating, completion toggling, and deletion. Include features like task prioritization and categorization.
+State Management: Store tasks on the blockchain using a decentralized ledger. Utilize Solana’s features for high-speed transactions and efficient data storage.
+Frontend Development: Create a responsive, user-friendly interface that allows users to interact with the blockchain through task creation, updates, and status changes.
+Integration: Connect the front end to the smart contracts using a Solana-compatible SDK (e.g., @solana/web3.js).
+Testing: Perform thorough testing of both the smart contracts and front-end interface to ensure reliability and security.
+Deployment: Deploy the smart contracts to the Solana blockchain and host the front end. Make the platform publicly available for use.
 
-### Priority
+## Personal Story Summary:
 
-Defines three possible priority levels:
-
-- `#High`
-- `#Medium`
-- `#Low`
-
-### Category
-
-Defines five possible categories for tasks:
-
-- `#Work`
-- `#Personal`
-- `#Shopping`
-- `#Health`
-- `#Other`
-
-## Functions
-
-### `createTask`
-Creates a new task with the given title, description, category, and priority. Returns the unique task ID.
-
-**Arguments**:
-- `title`: The title of the task.
-- `description`: The description of the task.
-- `category`: The category of the task.
-- `priority`: The priority of the task.
-
-**Returns**: `TaskId` (unique identifier for the task).
-
-### `getTask`
-Fetches a task by its ID.
-
-**Arguments**:
-- `id`: The task ID.
-
-**Returns**: `?Task` (the task, or `null` if not found).
-
-### `updateTask`
-Updates an existing task with a new title, description, category, and priority.
-
-**Arguments**:
-- `id`: The task ID.
-- `title`: The new title.
-- `description`: The new description.
-- `category`: The new category.
-- `priority`: The new priority.
-
-**Returns**: `Bool` (true if the update was successful, false if the task does not exist).
-
-### `toggleComplete`
-Toggles the completion status of a task.
-
-**Arguments**:
-- `id`: The task ID.
-
-**Returns**: `Bool` (true if the task was found and updated, false if the task does not exist).
-
-### `deleteTask`
-Deletes a task by its ID.
-
-**Arguments**:
-- `id`: The task ID.
-
-**Returns**: `Bool` (true if the task was deleted, false if the task does not exist).
-
-### `getCompleted`
-Fetches all completed tasks.
-
-**Returns**: A list of completed tasks.
-
-### `getNonCompleted`
-Fetches all non-completed tasks.
-
-**Returns**: A list of non-completed tasks.
-
-### `getTasksByPriority`
-Fetches all tasks, sorted by their priority (High, Medium, Low).
-
-**Returns**: A list of tasks sorted by priority.
-
-## How to Run
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/sefasahiner16/ToDoList-motoko.git
+I have always been passionate about both productivity and blockchain technology. After encountering the limitations of traditional task management tools, I wanted to create something that could offer greater transparency, security, and control. TaskChain was born out of the desire to leverage the decentralized nature of blockchain to create a task management platform that empowers users. With TaskChain, I aim to make task management more secure and efficient for everyone, while embracing the potential of blockchain to change how we manage our digital lives.
